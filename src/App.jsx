@@ -2,15 +2,15 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
-import Navbar from "./component/Navbar";
-import Footer from "./component/Footer";
+import Navbar from "./Component/Navbar";
+import Footer from "./Component/Footer";
 
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Gallery from "./pages/Gallery";
-import Contact from "./pages/Contact";
-import Doctors from "./pages/Doctors";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Services from "./Pages/Services";
+import Gallery from "./Pages/Gallery";
+import Contact from "./Pages/Contact";
+import Doctors from "./Pages/Doctors";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -35,11 +35,11 @@ export default function App() {
       <main className="min-h-screen">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/gallery" element={<Gallery />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/doctors" element={<Doctors />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Services" element={<Services />} />
+          <Route path="/Gallery" element={<Gallery />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Doctors" element={<Doctors />} />
           <Route path="*" element={<Home />} />
         </Routes>
       </main>
