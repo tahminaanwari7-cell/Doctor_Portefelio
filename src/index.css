@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  color: #18324c;
+  background: #f8fbff;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background: #d8ebff;
+  color: #163c65;
+}
+
+.container-page {
+  width: min(1160px, calc(100% - 40px));
+  margin-inline: auto;
+}
+
+.section-space {
+  padding-block: 80px;
+}
+
+.medical-grid {
+  background-color: #f0f7ff;
+  background-image:
+    linear-gradient(#dceaf6 1px, transparent 1px),
+    linear-gradient(90deg, #dceaf6 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+@media (max-width: 640px) {
+  .container-page {
+    width: calc(100% - 28px);
+  }
+
+  .section-space {
+    padding-block: 52px;
+  }
+}
